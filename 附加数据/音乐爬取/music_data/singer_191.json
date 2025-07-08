@@ -1,0 +1,177 @@
+{
+    "id": 191,
+    "singer_name": "楚阳晨",
+    "category": "华语组合/乐队",
+    "singer_url": "https://music.163.com/artist?id=95598350",
+    "description": "大家好，我是楚阳晨在音乐的世界里，我如一颗执着的星辰，努力绽放属于自己的光芒。\n \n我对音乐的热爱，如同燃烧的火焰，炽热且永不熄灭。每一个音符都是我心灵的诉说，每一句歌词都是我故事的篇章。",
+    "songs": [
+        {
+            "song_name": "相思豆",
+            "song_url": "https://music.163.com/#//song?id=2638192053",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "见过一场雪",
+            "song_url": "https://music.163.com/#//song?id=2638192547",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "爱上乌鸦",
+            "song_url": "https://music.163.com/#//song?id=2638192592",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "期待下次",
+            "song_url": "https://music.163.com/#//song?id=2638192050",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "白云有花",
+            "song_url": "https://music.163.com/#//song?id=2638192591",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "青花~2",
+            "song_url": "https://music.163.com/#//song?id=2637842872",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "下一个晨曦",
+            "song_url": "https://music.163.com/#//song?id=2638192052",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "一起看日落",
+            "song_url": "https://music.163.com/#//song?id=2638192589",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "执手到白头",
+            "song_url": "https://music.163.com/#//song?id=2638191771",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "白桦林",
+            "song_url": "https://music.163.com/#//song?id=2638192189",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "风吹秋叶落",
+            "song_url": "https://music.163.com/#//song?id=2638192593",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "只见少年",
+            "song_url": "https://music.163.com/#//song?id=2638192049",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "心里的花蕊",
+            "song_url": "https://music.163.com/#//song?id=2638192054",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "日落的黄昏",
+            "song_url": "https://music.163.com/#//song?id=2638192590",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "都市星光",
+            "song_url": "https://music.163.com/#//song?id=2641579850",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "静看花落时",
+            "song_url": "https://music.163.com/#//song?id=2641585273",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "晚风寄思念",
+            "song_url": "https://music.163.com/#//song?id=2641588210",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "月影人间",
+            "song_url": "https://music.163.com/#//song?id=2641588543",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "竹林小径",
+            "song_url": "https://music.163.com/#//song?id=2641588738",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "颠沛流离中的爱",
+            "song_url": "https://music.163.com/#//song?id=2641571966",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "时光里的挚爱",
+            "song_url": "https://music.163.com/#//song?id=2641583884",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "江南诗韵茶香情",
+            "song_url": "https://music.163.com/#//song?id=2641583486",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "入眠",
+            "song_url": "https://music.163.com/#//song?id=2642289806",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "寂寞",
+            "song_url": "https://music.163.com/#//song?id=2642292180",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "1970-01-01T08:00:00"
+        }
+    ]
+}

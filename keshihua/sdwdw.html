@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歌手详细信息</title>
+  <link rel="stylesheet" href="css/singer.css" />
+  <!-- 引入 Element UI -->
+  <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">
+  <!-- 引入 ECharts -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+      margin: 20px;
+    }
+    .left-panel, .right-panel {
+      flex: 1;
+    }
+    .center-panel {
+      flex: 2;
+      width: 80%; /* 中间容器调整宽度 */
+    }
+    .song-list {
+      margin-top: 10px;
+      list-style: none;
+      padding: 0;
+    }
+    .song-list li {
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    .photo {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    #echarts1, #echarts2, #echarts3 {
+      width: 100%;
+      height: 400px;
+    }
+    #echarts3 {
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 左侧：歌手照片和基本信息 -->
+    <div class="left-panel">
+      <img src="./img/singger/zhoujielun.png" alt="歌手照片" class="photo">
+      <h2>周杰伦</h2>
+      <p>华语流行乐坛天王，擅长融合多种音乐风格。</p>
+    </div>
+
+    <!-- 中间：ECharts 可视化 -->
+    <div class="center-panel">
+      <div id="echarts1"></div> <!-- 风格占比图 -->
+      <div id="echarts2"></div> <!-- 时间线图 -->
+    </div>
+
+    <!-- 右侧：分类歌曲列表及人物关系图 -->
+    <div class="right-panel">
+      <h3>歌曲分类</h3>
+      <ul class="song-list" id="song-list">
+        <!-- 歌曲列表动态生成 -->
+      </ul>
+
+      <!-- 人物关系图 -->
+      <div id="echarts3"></div>
+    </div>
+  </div>
+
+  <!-- 模态框 -->
+  <div class="el-dialog__wrapper" id="song-dialog" style="display: none;">
+    <div class="el-dialog">
+      <div class="el-dialog__header">
+        <span>歌曲详情</span>
+        <button type="button" class="el-dialog__headerbtn" onclick="closeDialog()">×</button>
+      </div>
+      <div class="el-dialog__body">
+        <p>歌曲名称：<span id="song-name"></span></p>
+        <p>发行年份：<span id="song-year"></span></p>
+        <p>风格：<span id="song-style"></span></p>
+        <p>简介：<span id="song-description"></span></p>
+      </div>
+      <div class="el-dialog__footer">
+        <button class="el-button" onclick="closeDialog()">关闭</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+  // 添加人物关系图数据
+  function loadRelationsChart() {
+    const chart = echarts.init(document.getElementById('echarts3'));
+
+    // 点击节点的处理函数
+    function handleClick(event) {
+      const clickedNodeName = event.data.name;
+      console.log('点击了歌手：', clickedNodeName);
+
+      // 更新图表的数据，调整节点位置
+      chart.setOption({
+        series: [{
+          type: "graph",
+          layout: "force",
+          symbolSize: 50,
+          roam: true, // 支持拖拽
+          edgeSymbol: ["circle", "arrow"],
+          edgeSymbolSize: [4, 10],
+          data: option.series[0].data.map(item => {
+            if (item.name === clickedNodeName) {
+              item.x = 0; // 将点击的节点放置在中央
+              item.y = 0;
+            }
+            return item;
+          }),
+          links: option.series[0].links,
+          label: {
+            show: true,
+            position: "inside",
+            formatter: "{b}"
+          },
+          force: {
+            repulsion: 1000, // 节点之间的斥力
+            edgeLength: [50, 200], // 边的长度范围
+            layoutAnimation: true // 开启动画
+          }
+        }]
+      });
+    }
+
+    const option = {
+      title: {
+        text: "人物关系图",
+        left: "center",
+      },
+      tooltip: {
+        formatter: function (params) {
+          if (params.dataType === "node") {
+            return "人物： " + params.data.name;
+          } else if (params.dataType === "edge") {
+            return "关系：" + params.data.source + " - " + params.data.target;
+          }
+        }
+      },
+      series: [
+        {
+          type: "graph",
+          layout: "force",
+          symbolSize: 50,
+          roam: true, // 支持拖拽
+          edgeSymbol: ["circle", "arrow"],
+          edgeSymbolSize: [4, 10],
+          data: [
+            { name: "周杰伦", value: 1, symbolSize: 80, itemStyle: { color: "#FF6347" } },
+            { name: "林俊杰", value: 1, symbolSize: 80, itemStyle: { color: "#FFD700" } },
+            { name: "蔡依林", value: 1, symbolSize: 80, itemStyle: { color: "#32CD32" } },
+            { name: "王力宏", value: 1, symbolSize: 80, itemStyle: { color: "#1E90FF" } },
+            { name: "邓紫棋", value: 1, symbolSize: 80, itemStyle: { color: "#8A2BE2" } },
+            { name: "李荣浩", value: 1, symbolSize: 80, itemStyle: { color: "#FF4500" } }
+          ],
+          links: [
+            { source: "周杰伦", target: "林俊杰" },
+            { source: "周杰伦", target: "蔡依林" },
+            { source: "林俊杰", target: "王力宏" },
+            { source: "蔡依林", target: "王力宏" },
+            { source: "林俊杰", target: "邓紫棋" },
+            { source: "王力宏", target: "李荣浩" }
+          ],
+          label: {
+            show: true,
+            position: "inside",
+            formatter: "{b}"
+          },
+          force: {
+            repulsion: 1000, // 节点之间的斥力
+            edgeLength: [50, 200], // 边的长度范围
+            layoutAnimation: true // 开启动画
+          }
+        }
+      ]
+    };
+
+    chart.setOption(option);
+
+    // 监听点击事件
+    chart.on('click', handleClick);
+  }
+
+  // 加载风格占比图
+  function loadStyleChart() {
+    const chart = echarts.init(document.getElementById('echarts1'));
+    
+    const option = {
+      title: {
+        text: '周杰伦音乐风格占比',
+        left: 'center'
+      },
+      tooltip: {
+        trigger: 'item',
+        formatter: '{b}: {c} ({d}%)'
+      },
+      series: [
+        {
+          type: 'pie',
+          radius: '50%',
+          data: [
+            { name: '流行', value: 40 },
+            { name: '中国风', value: 30 },
+            { name: '摇滚', value: 15 },
+            { name: '电影原声', value: 15 }
+          ]
+        }
+      ]
+    };
+
+    chart.setOption(option);
+  }
+
+  // 加载时间线图
+  function loadTimelineChart() {
+    const chart = echarts.init(document.getElementById('echarts2'));
+    
+    const option = {
+      title: {
+        text: '周杰伦专辑发行时间',
+        left: 'center'
+      },
+      xAxis: {
+        type: 'category',
+        data: ['2000', '2001', '2003', '2004', '2006', '2008', '2011', '2018']
+      },
+      yAxis: {
+        type: 'value'
+      },
+      series: [
+        {
+          type: 'line',
+          data: [50, 70, 80, 90, 110, 130, 150, 170]
+        }
+      ]
+    };
+
+    chart.setOption(option);
+  }
+
+  // 加载歌曲列表
+  function loadSongList() {
+    const songListElement = document.getElementById("song-list");
+    const songs = [
+      { name: "青花瓷", year: 2008, style: "中国风", description: "融合中国古风元素与流行，展现东方魅力。" },
+      { name: "双截棍", year: 2004, style: "摇滚", description: "融合摇滚与中国传统武术元素，动感十足。" },
+      { name: "东风破", year: 2004, style: "中国风", description: "结合中国传统元素，展现周杰伦的独特风格。" },
+      { name: "稻香", year: 2008, style: "流行", description: "描绘乡村生活，歌词富有哲理。" }
+    ];
+    
+    songs.forEach((song) => {
+      const songItem = document.createElement("li");
+      songItem.innerText = song.name;
+      songItem.onclick = () => openSongDialog(song);
+      songListElement.appendChild(songItem);
+    });
+  }
+
+  // 打开歌曲详情模态框
+  function openSongDialog(song) {
+    document.getElementById("song-name").innerText = song.name;
+    document.getElementById("song-year").innerText = song.year;
+    document.getElementById("song-style").innerText = song.style;
+    document.getElementById("song-description").innerText = song.description;
+    document.getElementById("song-dialog").style.display = "block";
+  }
+
+  // 关闭歌曲详情模态框
+  function closeDialog() {
+    document.getElementById("song-dialog").style.display = "none";
+  }
+
+  // 初始化页面
+  function initPage() {
+    loadRelationsChart();
+    loadStyleChart();
+    loadTimelineChart();
+    loadSongList();
+  }
+
+  initPage();
+</script>
+</body>
+</html>

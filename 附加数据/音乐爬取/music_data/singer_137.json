@@ -1,0 +1,359 @@
+{
+    "id": 137,
+    "singer_name": "纯音乐",
+    "category": "华语组合/乐队",
+    "singer_url": "https://music.163.com/artist?id=13500022",
+    "description": "轻柔纯音乐艺人合集。",
+    "songs": [
+        {
+            "song_name": "摇篮曲（纯音乐）",
+            "song_url": "https://music.163.com/#//song?id=1813028824",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2020-03-25T00:00:00"
+        },
+        {
+            "song_name": "小鸡进行曲",
+            "song_url": "https://music.163.com/#//song?id=1803786865",
+            "lyrics": "",
+            "popularity": "119",
+            "time": "2020-12-11T00:00:00"
+        },
+        {
+            "song_name": "晚间孤单",
+            "song_url": "https://music.163.com/#//song?id=1813028131",
+            "lyrics": "",
+            "popularity": "44",
+            "time": "2020-03-23T00:00:00"
+        },
+        {
+            "song_name": "浪漫夜晚（纯音乐）",
+            "song_url": "https://music.163.com/#//song?id=1813028821",
+            "lyrics": "",
+            "popularity": "2",
+            "time": "2020-03-25T00:00:00"
+        },
+        {
+            "song_name": "温柔的晚风 (助眠曲)",
+            "song_url": "https://music.163.com/#//song?id=2028690906",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-03-13T00:00:00"
+        },
+        {
+            "song_name": "催眠曲",
+            "song_url": "https://music.163.com/#//song?id=1310886033",
+            "lyrics": "",
+            "popularity": "1286",
+            "time": "2018-07-05T00:00:00"
+        },
+        {
+            "song_name": "安静回忆",
+            "song_url": "https://music.163.com/#//song?id=1813059430",
+            "lyrics": "",
+            "popularity": "56",
+            "time": "2020-03-24T00:00:00"
+        },
+        {
+            "song_name": "浪漫主义",
+            "song_url": "https://music.163.com/#//song?id=2015596399",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "2023-01-24T00:00:00"
+        },
+        {
+            "song_name": "雨下的芭蕉 (古筝静心)",
+            "song_url": "https://music.163.com/#//song?id=2023663510",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "2023-02-25T00:00:00"
+        },
+        {
+            "song_name": "睡觉",
+            "song_url": "https://music.163.com/#//song?id=1310886029",
+            "lyrics": "",
+            "popularity": "90",
+            "time": "2018-07-05T00:00:00"
+        },
+        {
+            "song_name": "清亭长日 (古筝静心)",
+            "song_url": "https://music.163.com/#//song?id=2020510037",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-02-10T00:00:00"
+        },
+        {
+            "song_name": "薄云",
+            "song_url": "https://music.163.com/#//song?id=2025238901",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "时空漫步 (竖琴安眠曲)",
+            "song_url": "https://music.163.com/#//song?id=2017959304",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-01-28T00:00:00"
+        },
+        {
+            "song_name": "柔和的光线",
+            "song_url": "https://music.163.com/#//song?id=2025238909",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "丢手绢",
+            "song_url": "https://music.163.com/#//song?id=2025238902",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "黄土高坡",
+            "song_url": "https://music.163.com/#//song?id=2025238906",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "含羞的春阳",
+            "song_url": "https://music.163.com/#//song?id=2025238904",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "哭得酣畅淋漓",
+            "song_url": "https://music.163.com/#//song?id=2025238908",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "小星星（纯音乐）",
+            "song_url": "https://music.163.com/#//song?id=1813047695",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "2020-03-26T00:00:00"
+        },
+        {
+            "song_name": "笑得盎然肆意",
+            "song_url": "https://music.163.com/#//song?id=2025235469",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "永远永远 (解压曲)",
+            "song_url": "https://music.163.com/#//song?id=2032201556",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-03-23T00:00:00"
+        },
+        {
+            "song_name": "我好像在哪见过你",
+            "song_url": "https://music.163.com/#//song?id=2023356950",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-22T00:00:00"
+        },
+        {
+            "song_name": "短歌行——记曹操《军事联盟之大军师司马懿》",
+            "song_url": "https://music.163.com/#//song?id=530847441",
+            "lyrics": " 作词 : 无\n 作曲 : 鬼冢虫虫\n《短歌行》\n作曲/编曲：鬼冢虫虫\n明明如月，何时可掇？\n忧从中来，不可断绝。\n越陌度阡，枉用相存。\n契阔谈宴，心念旧恩。\n对酒当歌，人生几何？\n譬如朝露，去日苦多。\n慨当以慷，忧思难忘。\n何以解忧？唯有杜康。\n青青子衿，悠悠我心。\n但为君故，沈吟至今。\n呦呦鹿鸣，食野之苹。\n我有嘉宾，鼓瑟吹笙。\n明明如月，何时可掇？\n忧从中来，不可断绝。\n越陌度阡，枉用相存。\n契阔谈宴，心念旧恩。\n月明星稀，乌鹊南飞，\n绕树三匝，何枝可依？\n山不厌高，海不厌深。\n周公吐哺，天下归心。",
+            "popularity": "636",
+            "time": "2018-01-14T23:52:31"
+        },
+        {
+            "song_name": "美好清晨（纯音乐）",
+            "song_url": "https://music.163.com/#//song?id=1813029599",
+            "lyrics": "",
+            "popularity": "17",
+            "time": "2020-03-25T00:00:00"
+        },
+        {
+            "song_name": "跑步有氧健身BGM",
+            "song_url": "https://music.163.com/#//song?id=2021238971",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-11T00:00:00"
+        },
+        {
+            "song_name": "减压活力2（纯音乐）",
+            "song_url": "https://music.163.com/#//song?id=1813023907",
+            "lyrics": "",
+            "popularity": "4",
+            "time": "2020-03-23T00:00:00"
+        },
+        {
+            "song_name": "一山又一山",
+            "song_url": "https://music.163.com/#//song?id=2034746617",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "2023-04-09T00:00:00"
+        },
+        {
+            "song_name": "尘",
+            "song_url": "https://music.163.com/#//song?id=2024616083",
+            "lyrics": "",
+            "popularity": "2",
+            "time": "2023-02-27T00:00:00"
+        },
+        {
+            "song_name": "夏日清凉 (雨声+古筝)",
+            "song_url": "https://music.163.com/#//song?id=2020441832",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-02-08T00:00:00"
+        },
+        {
+            "song_name": "清风挽 (陶笛养生)",
+            "song_url": "https://music.163.com/#//song?id=2020501616",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "2023-02-12T00:00:00"
+        },
+        {
+            "song_name": "放松治愈（纯音乐）",
+            "song_url": "https://music.163.com/#//song?id=1813028545",
+            "lyrics": "",
+            "popularity": "24",
+            "time": "2020-03-25T00:00:00"
+        },
+        {
+            "song_name": "调整心情",
+            "song_url": "https://music.163.com/#//song?id=1310886031",
+            "lyrics": "",
+            "popularity": "22",
+            "time": "2018-07-05T00:00:00"
+        },
+        {
+            "song_name": "对待自己温柔一点",
+            "song_url": "https://music.163.com/#//song?id=2025239163",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "激情澎湃（纯音乐）",
+            "song_url": "https://music.163.com/#//song?id=1813047345",
+            "lyrics": "",
+            "popularity": "12",
+            "time": "2020-06-01T00:00:00"
+        },
+        {
+            "song_name": "共享无尽的黄昏",
+            "song_url": "https://music.163.com/#//song?id=2025239164",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "绵绵不绝的钟声",
+            "song_url": "https://music.163.com/#//song?id=2025239165",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "柔和",
+            "song_url": "https://music.163.com/#//song?id=2026525225",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-03-06T00:00:00"
+        },
+        {
+            "song_name": "安静的夜晚 (钢琴曲)",
+            "song_url": "https://music.163.com/#//song?id=2036249024",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-04-08T00:00:00"
+        },
+        {
+            "song_name": "秋天的风声 (助眠治愈)",
+            "song_url": "https://music.163.com/#//song?id=2030848726",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-03-22T00:00:00"
+        },
+        {
+            "song_name": "细雨绵绵 (雨声+古筝)",
+            "song_url": "https://music.163.com/#//song?id=2020441834",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-02-08T00:00:00"
+        },
+        {
+            "song_name": "我不想毕业",
+            "song_url": "https://music.163.com/#//song?id=2025239166",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "星河之役",
+            "song_url": "https://music.163.com/#//song?id=2025239168",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "漱石枕流 (手碟曲)",
+            "song_url": "https://music.163.com/#//song?id=2031354808",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-03-24T00:00:00"
+        },
+        {
+            "song_name": "鹤唳华亭 (手碟曲)",
+            "song_url": "https://music.163.com/#//song?id=2031353903",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-03-24T00:00:00"
+        },
+        {
+            "song_name": "漫步 (钢琴静心曲)",
+            "song_url": "https://music.163.com/#//song?id=2017959301",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-01-28T00:00:00"
+        },
+        {
+            "song_name": "我一生荒芜",
+            "song_url": "https://music.163.com/#//song?id=2025239167",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "宇宙的孩子",
+            "song_url": "https://music.163.com/#//song?id=2025239687",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2023-02-28T00:00:00"
+        },
+        {
+            "song_name": "白噪音助眠2",
+            "song_url": "https://music.163.com/#//song?id=1964462575",
+            "lyrics": "",
+            "popularity": 0,
+            "time": "2022-07-15T00:00:00"
+        },
+        {
+            "song_name": "鸿断鱼沉 (手碟曲)",
+            "song_url": "https://music.163.com/#//song?id=2031354807",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-03-24T00:00:00"
+        },
+        {
+            "song_name": "去有风的地方",
+            "song_url": "https://music.163.com/#//song?id=2022405144",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "2023-02-15T00:00:00"
+        }
+    ]
+}

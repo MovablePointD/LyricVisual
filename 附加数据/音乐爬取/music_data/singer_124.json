@@ -1,0 +1,359 @@
+{
+    "id": 124,
+    "singer_name": "Cicada",
+    "category": "华语组合/乐队",
+    "singer_url": "https://music.163.com/artist?id=11320",
+    "description": "成军于2009年，Cicada以钢琴、木吉他、小提琴、中提琴、大提琴五种乐器交织而成。之所以取名为Cicada（蝉）是因为，人们察觉到蝉的出现，往往是听到牠们的声音，而不是看见其形体。\n2013年，Cicada开始为台湾的土地创作，《边境消",
+    "songs": [
+        {
+            "song_name": "你再也读不出我任何欲望",
+            "song_url": "https://music.163.com/#//song?id=350127",
+            "lyrics": "",
+            "popularity": "50484",
+            "time": "2011-09-10T00:00:00"
+        },
+        {
+            "song_name": "晨雾",
+            "song_url": "https://music.163.com/#//song?id=350129",
+            "lyrics": "",
+            "popularity": "14358",
+            "time": "2011-09-10T00:00:00"
+        },
+        {
+            "song_name": "抵达圈谷之前的棱线",
+            "song_url": "https://music.163.com/#//song?id=2008269250",
+            "lyrics": "",
+            "popularity": "448",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "湖面的尽头",
+            "song_url": "https://music.163.com/#//song?id=350133",
+            "lyrics": "",
+            "popularity": "1177",
+            "time": "2011-09-10T00:00:00"
+        },
+        {
+            "song_name": "汇流向海 - 2024 Version",
+            "song_url": "https://music.163.com/#//song?id=2606960902",
+            "lyrics": "",
+            "popularity": "74",
+            "time": "2024-07-19T00:00:00"
+        },
+        {
+            "song_name": "以一种假装放荡的矜持 与你告别",
+            "song_url": "https://music.163.com/#//song?id=350145",
+            "lyrics": "",
+            "popularity": "45032",
+            "time": "2017-12-05T08:00:00"
+        },
+        {
+            "song_name": "降落在金黄色草坡",
+            "song_url": "https://music.163.com/#//song?id=1399998680",
+            "lyrics": "",
+            "popularity": "354",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "栖居在溪源之上",
+            "song_url": "https://music.163.com/#//song?id=2008268553",
+            "lyrics": "",
+            "popularity": "953",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "最后 仍在一起",
+            "song_url": "https://music.163.com/#//song?id=350149",
+            "lyrics": "",
+            "popularity": "17023",
+            "time": "2017-12-05T08:00:00"
+        },
+        {
+            "song_name": "浪沫抚过砾石滩",
+            "song_url": "https://music.163.com/#//song?id=399353722",
+            "lyrics": "",
+            "popularity": "1237",
+            "time": "2015-09-19T00:00:00"
+        },
+        {
+            "song_name": "当海潮涌向礁岩",
+            "song_url": "https://music.163.com/#//song?id=399353721",
+            "lyrics": "",
+            "popularity": "3182",
+            "time": "2015-09-19T00:00:00"
+        },
+        {
+            "song_name": "踏出一条白色的路",
+            "song_url": "https://music.163.com/#//song?id=1399998683",
+            "lyrics": "",
+            "popularity": "343",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "浮游在海上的岛屿／潜沉于水下的人们",
+            "song_url": "https://music.163.com/#//song?id=350139",
+            "lyrics": "",
+            "popularity": "9095",
+            "time": "2017-12-05T08:00:00"
+        },
+        {
+            "song_name": "走入有雾的森林",
+            "song_url": "https://music.163.com/#//song?id=1399998675",
+            "lyrics": "",
+            "popularity": "438",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "巨木曾在的痕迹",
+            "song_url": "https://music.163.com/#//song?id=2008268555",
+            "lyrics": "",
+            "popularity": "171",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "挣脱",
+            "song_url": "https://music.163.com/#//song?id=350131",
+            "lyrics": "",
+            "popularity": "1140",
+            "time": "2011-09-10T00:00:00"
+        },
+        {
+            "song_name": "一起之后...",
+            "song_url": "https://music.163.com/#//song?id=350123",
+            "lyrics": "",
+            "popularity": "1728",
+            "time": "2011-09-10T00:00:00"
+        },
+        {
+            "song_name": "在海与土地之间 - 2024 Version",
+            "song_url": "https://music.163.com/#//song?id=2606960899",
+            "lyrics": "",
+            "popularity": "32",
+            "time": "2024-07-19T00:00:00"
+        },
+        {
+            "song_name": "小水洼",
+            "song_url": "https://music.163.com/#//song?id=350117",
+            "lyrics": "",
+            "popularity": "103",
+            "time": "2017-12-05T08:00:00"
+        },
+        {
+            "song_name": "松叶上的鸟与水珠",
+            "song_url": "https://music.163.com/#//song?id=2008269249",
+            "lyrics": "",
+            "popularity": "62",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "穿过雾雨森林",
+            "song_url": "https://music.163.com/#//song?id=2008269251",
+            "lyrics": "",
+            "popularity": "31",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "越过海岸山脉",
+            "song_url": "https://music.163.com/#//song?id=399354735",
+            "lyrics": "",
+            "popularity": "652",
+            "time": "2015-09-19T00:00:00"
+        },
+        {
+            "song_name": "当海潮涌向礁岩 - 2024 Version",
+            "song_url": "https://music.163.com/#//song?id=2606960901",
+            "lyrics": "",
+            "popularity": "44",
+            "time": "2024-07-19T00:00:00"
+        },
+        {
+            "song_name": "阳光下 你灿烂地笑",
+            "song_url": "https://music.163.com/#//song?id=350124",
+            "lyrics": "",
+            "popularity": "1004",
+            "time": "2011-09-10T00:00:00"
+        },
+        {
+            "song_name": "下过雨的营地出太阳了",
+            "song_url": "https://music.163.com/#//song?id=2008269248",
+            "lyrics": "",
+            "popularity": "84",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "雨从傍晚下到午夜",
+            "song_url": "https://music.163.com/#//song?id=2008269252",
+            "lyrics": "",
+            "popularity": "13",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "夕阳消失之前",
+            "song_url": "https://music.163.com/#//song?id=1399998679",
+            "lyrics": "",
+            "popularity": "200",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "鲸",
+            "song_url": "https://music.163.com/#//song?id=520242144",
+            "lyrics": "",
+            "popularity": "791",
+            "time": "2017-11-23T00:00:00"
+        },
+        {
+            "song_name": "失温",
+            "song_url": "https://music.163.com/#//song?id=350126",
+            "lyrics": "",
+            "popularity": "260",
+            "time": "2011-09-10T00:00:00"
+        },
+        {
+            "song_name": "当丛花毅然绽放 - 2024 Version",
+            "song_url": "https://music.163.com/#//song?id=2606960900",
+            "lyrics": "",
+            "popularity": "34",
+            "time": "2024-07-19T00:00:00"
+        },
+        {
+            "song_name": "你再也讀不出我任何慾望",
+            "song_url": "https://music.163.com/#//song?id=1470946310",
+            "lyrics": "",
+            "popularity": "83",
+            "time": "2011-09-09T00:00:00"
+        },
+        {
+            "song_name": "等待再一次跃出水面",
+            "song_url": "https://music.163.com/#//song?id=520242139",
+            "lyrics": "",
+            "popularity": "867",
+            "time": "2017-11-23T00:00:00"
+        },
+        {
+            "song_name": "在水池交会",
+            "song_url": "https://music.163.com/#//song?id=2008268554",
+            "lyrics": "",
+            "popularity": "38",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "湖面的盡頭",
+            "song_url": "https://music.163.com/#//song?id=1470946312",
+            "lyrics": "",
+            "popularity": "26",
+            "time": "2011-09-09T00:00:00"
+        },
+        {
+            "song_name": "在海与土地之间",
+            "song_url": "https://music.163.com/#//song?id=27538007",
+            "lyrics": "",
+            "popularity": "130",
+            "time": "2013-08-02T00:00:00"
+        },
+        {
+            "song_name": "告别／再见",
+            "song_url": "https://music.163.com/#//song?id=350147",
+            "lyrics": "",
+            "popularity": "894",
+            "time": "2017-12-05T08:00:00"
+        },
+        {
+            "song_name": "散落的时光",
+            "song_url": "https://music.163.com/#//song?id=350125",
+            "lyrics": "",
+            "popularity": "439",
+            "time": "2011-09-10T00:00:00"
+        },
+        {
+            "song_name": "总是有水的地方",
+            "song_url": "https://music.163.com/#//song?id=1399998676",
+            "lyrics": "",
+            "popularity": "251",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "原本是家的地方 - 2024 Version",
+            "song_url": "https://music.163.com/#//song?id=2606962726",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "2024-07-19T00:00:00"
+        },
+        {
+            "song_name": "用羽毛织出一条淡蓝色的小径",
+            "song_url": "https://music.163.com/#//song?id=350141",
+            "lyrics": "",
+            "popularity": "1043",
+            "time": "2017-12-05T00:00:00"
+        },
+        {
+            "song_name": "能说的不多了",
+            "song_url": "https://music.163.com/#//song?id=350128",
+            "lyrics": "",
+            "popularity": "468",
+            "time": "2011-09-10T00:00:00"
+        },
+        {
+            "song_name": "通往家的松针小径",
+            "song_url": "https://music.163.com/#//song?id=2008269253",
+            "lyrics": "",
+            "popularity": "2",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "仰望海平面",
+            "song_url": "https://music.163.com/#//song?id=399354737",
+            "lyrics": "",
+            "popularity": "253",
+            "time": "2015-09-19T00:00:00"
+        },
+        {
+            "song_name": "A Man Main Theme",
+            "song_url": "https://music.163.com/#//song?id=1998651727",
+            "lyrics": "",
+            "popularity": "90",
+            "time": "2022-11-11T00:00:00"
+        },
+        {
+            "song_name": "日出",
+            "song_url": "https://music.163.com/#//song?id=399353719",
+            "lyrics": "",
+            "popularity": "226",
+            "time": "2015-09-19T00:00:00"
+        },
+        {
+            "song_name": "捡到五分钟",
+            "song_url": "https://music.163.com/#//song?id=350121",
+            "lyrics": "",
+            "popularity": "291",
+            "time": "2017-12-05T08:00:00"
+        },
+        {
+            "song_name": "有一撮阳光",
+            "song_url": "https://music.163.com/#//song?id=399353718",
+            "lyrics": "",
+            "popularity": "140",
+            "time": "2015-09-19T00:00:00"
+        },
+        {
+            "song_name": "深蓝色长影",
+            "song_url": "https://music.163.com/#//song?id=399354734",
+            "lyrics": "",
+            "popularity": "144",
+            "time": "2015-09-19T00:00:00"
+        },
+        {
+            "song_name": "在无垠世界的海边相聚",
+            "song_url": "https://music.163.com/#//song?id=399353720",
+            "lyrics": "",
+            "popularity": "322",
+            "time": "2015-09-19T00:00:00"
+        },
+        {
+            "song_name": "潜入太平洋",
+            "song_url": "https://music.163.com/#//song?id=399354736",
+            "lyrics": "",
+            "popularity": "146",
+            "time": "2015-09-19T00:00:00"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+/* body {
+    background: url("../img/bg.png") no-repeat center top #0b1530;
+    background-size: cover;
+    width: 1920px;
+}  */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("../img/bg.png") no-repeat center top #0b1530;
+  background-size: cover; /* 背景图自动缩放，覆盖整个页面 */
+  background-position: center; /* 背景居中对齐 */
+  background-attachment: fixed; /* 背景图固定不滚动 */
+  background-repeat: no-repeat; /* 背景图不重复 */
+  color: white; /* 默认文字颜色改为白色，确保可读性 */
+}
+
+/* 添加一个半透明遮罩增强可读性 */
+.container {
+  background-color: rgba(0, 0, 0, 0.6); /* 半透明黑色背景 */
+  border-radius: 10px;
+  padding: 20px;
+  height: 970px;
+}
+
+.photo {
+  border: 5px solid white; /* 突出照片边框 */
+}
+
+h1, h2, h3 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* 文字阴影 */
+}
+
+#song-list button {
+  background-color: rgba(255, 255, 255, 0.3); /* 半透明按钮背景 */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#song-list button:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* 悬停效果 */
+}
+

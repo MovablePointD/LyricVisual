@@ -1,0 +1,114 @@
+{
+    "id": 178,
+    "singer_name": "彩虹船",
+    "category": "华语组合/乐队",
+    "singer_url": "https://music.163.com/artist?id=36623593",
+    "description": "彩虹船，来自郑州的器乐摇滚乐队，2020年11月以单人团的形式发行首张录音室专辑《Born Of Fire》。2021年组建三人阵容：吉他 启高、贝斯 李铁、鼓手 贾博涛。2024年2月发行第二张录音室专辑《彩虹船》。2024年7月发行单曲",
+    "songs": [
+        {
+            "song_name": "拂袖而归",
+            "song_url": "https://music.163.com/#//song?id=1500930442",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "Say Goodbye To Sunshine",
+            "song_url": "https://music.163.com/#//song?id=2613131131",
+            "lyrics": "",
+            "popularity": "34",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "释然",
+            "song_url": "https://music.163.com/#//song?id=2129187378",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "生命中最美好的事情之一",
+            "song_url": "https://music.163.com/#//song?id=2129188426",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "望云海",
+            "song_url": "https://music.163.com/#//song?id=2129188432",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "No title",
+            "song_url": "https://music.163.com/#//song?id=1810135217",
+            "lyrics": " 作词 : 启高\n 作曲 : 启高\n 编曲 : 彩虹船\n吉他：启高\n人声：启高\n和声：琳子\n贝斯：白光辉\n鼓 ：王轲\n录混：徐佳\n黎明前，那一道光划破天空\n我心中，阴暗角落被光照亮\n眼看天要亮了\n你找到答案吗\n地狱、人间、天堂、都散了\n黎明前，在黎明之前",
+            "popularity": "4",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "夏日的幻想",
+            "song_url": "https://music.163.com/#//song?id=1476244079",
+            "lyrics": "",
+            "popularity": "3",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "不可阻挡的光",
+            "song_url": "https://music.163.com/#//song?id=1483824687",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "Forgive",
+            "song_url": "https://music.163.com/#//song?id=1497402148",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "小男孩",
+            "song_url": "https://music.163.com/#//song?id=2129188430",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "房间里的鱼",
+            "song_url": "https://music.163.com/#//song?id=2129187360",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "九又二分之一",
+            "song_url": "https://music.163.com/#//song?id=1493120766",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "追逐风的人",
+            "song_url": "https://music.163.com/#//song?id=2129187362",
+            "lyrics": "",
+            "popularity": "0",
+            "time": "未找到发布日期"
+        },
+        {
+            "song_name": "嬉",
+            "song_url": "https://music.163.com/#//song?id=2129188405",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "1970-01-01T08:00:00"
+        },
+        {
+            "song_name": "远行客",
+            "song_url": "https://music.163.com/#//song?id=1487389924",
+            "lyrics": "",
+            "popularity": "1",
+            "time": "未找到发布日期"
+        }
+    ]
+}

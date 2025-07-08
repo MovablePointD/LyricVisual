@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歌手详细信息</title>
+  <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+      margin: 20px;
+    }
+    .left-panel, .right-panel {
+      flex: 1;
+    }
+    .center-panel {
+      flex: 2;
+    }
+    .song-list {
+      list-style: none;
+      padding: 0;
+    }
+    .song-list li {
+      margin: 10px 0;
+    }
+    .photo {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    #echarts1, #echarts2, #echarts3 {
+      width: 100%;
+      height: 400px;
+    }
+    #song-dialog {
+      display: none;
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      background: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      z-index: 1000;
+    }
+    .dialog-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+    .el-button {
+      background-color: #409eff;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <img src="./img/singger/zhoujielun.png" alt="歌手照片" class="photo">
+      <h2>周杰伦</h2>
+      <p>华语流行乐坛天王，擅长融合多种音乐风格。</p>
+    </div>
+    <div class="center-panel">
+      <div id="echarts1"></div> <!-- 风格占比图 -->
+      <div id="echarts2"></div> <!-- 时间线图 -->
+      <div id="echarts3"></div> <!-- 人物关系图 -->
+    </div>
+    <div class="right-panel">
+      <h3>歌曲分类</h3>
+      <ul class="song-list" id="song-list">
+        <!-- 动态生成 -->
+      </ul>
+    </div>
+  </div>
+  <div id="song-dialog" class="el-dialog">
+    <div>
+      <h3>歌曲详情</h3>
+      <p>歌曲名称：<span id="song-name"></span></p>
+      <p>发行年份：<span id="song-year"></span></p>
+      <p>风格：<span id="song-style"></span></p>
+      <p>简介：<span id="song-description"></span></p>
+      <button class="el-button" onclick="closeDialog()">关闭</button>
+    </div>
+  </div>
+  <div class="dialog-overlay" id="dialog-overlay"></div>
+  
+<script>
+  const data = {
+    styles: [
+      { name: "流行", value: 40 },
+      { name: "中国风", value: 30 },
+      { name: "摇滚", value: 15 },
+      { name: "电影原声", value: 15 },
+    ],
+    timeline: [
+      { year: "2000", count: 3 },
+      { year: "2001", count: 5 },
+      { year: "2006", count: 7 },
+      { year: "2007", count: 10 },
+      { year: "2016", count: 2 },
+    ],
+    songs: [
+      { name: "可爱女人", year: 2000, style: "流行", description: "周杰伦早期的代表作之一。" },
+      { name: "龙卷风", year: 2000, style: "流行", description: "周杰伦的成名曲。" },
+      { name: "青花瓷", year: 2007, style: "中国风", description: "中国风歌曲的巅峰之作。" },
+      { name: "不能说的秘密", year: 2007, style: "电影原声", description: "电影主题曲，感人至深。" },
+    ],
+  };
+
+ 
+  function loadStyleChart() {
+    const chart = echarts.init(document.getElementById("echarts1"));
+    const option = {
+      title: { text: "歌曲风格占比", left: "center" },
+      tooltip: { trigger: "item" },
+      series: [
+        {
+          type: "pie",
+          radius: ["40%", "70%"],
+          data: data.styles,
+          label: { formatter: "{b}: {d}%" },
+        },
+      ],
+    };
+    chart.setOption(option);
+  }
+
+  function loadTimelineChart() {
+    const chart = echarts.init(document.getElementById("echarts2"));
+    const option = {
+      title: { text: "歌曲数量时间线", left: "center" },
+      tooltip: { trigger: "axis" },
+      xAxis: { type: "category", data: data.timeline.map((item) => item.year) },
+      yAxis: { type: "value" },
+      series: [
+        {
+          type: "line",
+          data: data.timeline.map((item) => item.count),
+          label: { show: true },
+        },
+      ],
+    };
+    chart.setOption(option);
+  }
+
+  function loadSongList() {
+    const songList = document.getElementById("song-list");
+    data.songs.forEach((song) => {
+      const li = document.createElement("li");
+      const button = document.createElement("button");
+      button.classList.add("el-button");
+      button.textContent = `${song.name} (${song.year})`;
+      button.onclick = () => showSongDetails(song);
+      li.appendChild(button);
+      songList.appendChild(li);
+    });
+  }
+
+  function showSongDetails(song) {
+    document.getElementById("song-name").textContent = song.name;
+    document.getElementById("song-year").textContent = song.year;
+    document.getElementById("song-style").textContent = song.style;
+    document.getElementById("song-description").textContent = song.description;
+    document.getElementById("song-dialog").style.display = "block";
+    document.getElementById("dialog-overlay").style.display = "block";
+  }
+
+  function closeDialog() {
+    document.getElementById("song-dialog").style.display = "none";
+    document.getElementById("dialog-overlay").style.display = "none";
+  }
+
+  async function initPage() {
+    loadStyleChart();
+    loadTimelineChart();
+    loadSongList();
+    await loadRelationsChart();
+  }
+
+  initPage();
+</script>
+</body>
+</html>

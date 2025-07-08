@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+    <title>歌曲年代变化分析</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+           歌曲年代变化分析
+        </div>
+    </div>
+    <!-- <div class="menu"> -->
+    <!-- 预留菜单位置 -->
+    <!-- </div> -->
+    <div class="main clearfix">
+        <div class="main-left fleft">
+            <div class="box bg-title">
+                <div class="title text-center">订单品类占比</div>
+                <div class="content" style="height: 415px;">
+                    <div id="chart1" style="width: 100%; height: 400px;"></div>
+                </div>
+            </div>
+            <div class="box bg ranking mt30">
+                <div class="title2">投诉排名</div>
+                <div class="content" style="height: 334px; overflow: hidden;">
+                    <div id="chart2" style="width: 100%; height: 430px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main-center fleft">
+            <div class="box center-top-bg">
+                <div id="chart3" style="width: 100%; height: 100%;"></div>
+              
+            </div>
+            <div class="box center-bottom center-bottom-bg">
+                <div class="title2 text-left"></div>
+                <div class="content">
+                    <div id="chart55" style="width: 100%; height: 430px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main-right fright">
+
+            <div class="box bg-title">
+                <div class="title text-center">歌手热榜</div>
+                <div class="content" style="height: 360px; overflow: hidden; padding:0 13px;">
+                    <div class="data-display">
+                   
+                      
+                        <!-- 切换按钮 -->
+                        <div class="radio-group" style="text-align: center; margin-bottom: 20px;">
+                          <button
+                            class="switch-btn active"
+                            id="salesBtn"
+                            onclick="switchRanking('sales')"
+                          >
+                            按销售量
+                          </button>
+                          <button class="switch-btn" id="amountBtn" onclick="switchRanking('amount')">
+                            按销售额
+                          </button>
+                        </div>
+                      
+                        <!-- 排行榜 -->
+                        <div id="rankingList" style="max-width: 600px; margin: 0 auto;">
+                          <!-- 数据将通过 JavaScript 动态插入 -->
+                        </div>
+                      
+                        <button
+                          style="
+                            margin-top: 20px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            padding: 10px 20px;
+                            font-size: 1em;
+                            color: white;
+                            background-color: #4caf50;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                          "
+                          onclick="loadMore()"
+                        >
+                          查看更多
+                        </button>
+                      </div>
+                      
+                </div>
+            </div>
+
+            <div class="box right-bottom-bg mt30">
+                <div class="content" style="height: 520px;overflow: hidden; overflow: hidden; padding:0 13px;">
+                    <div id="chart5" style="width: 100%; height: 515px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/world.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+<style>
+    /* 美化切换按钮 */
+    .switch-btn {
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #4caf50;
+      background-color: white;
+      border: 2px solid #4caf50;
+      border-radius: 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+  
+    .switch-btn.active {
+      background-color: #4caf50;
+      color: white;
+    }
+  
+    .switch-btn:hover {
+      background-color: #45a049;
+      color: white;
+    }
+  
+    /* 排行榜样式 */
+    .ranking-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      margin-bottom: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      font-size: 1em;
+    }
+  
+    .ranking-item:nth-child(odd) {
+      background-color: #f1f1f1;
+    }
+  
+    .ranking-rank {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #4caf50;
+      display: flex;
+      align-items: center;
+    }
+  
+    .ranking-rank.medal {
+      font-size: 1.5em;
+      margin-right: 10px;
+    }
+  
+    .ranking-rank.gold {
+      color: gold;
+    }
+  
+    .ranking-rank.silver {
+      color: silver;
+    }
+  
+    .ranking-rank.bronze {
+      color: #cd7f32;
+    }
+  
+    .ranking-province {
+      flex: 1;
+      text-align: left;
+      margin-left: 20px;
+      font-size: 1em;
+      color: #333;
+    }
+  
+    .ranking-value {
+      font-weight: bold;
+      font-size: 1em;
+      color: #555;
+    }
+  </style>
+  
+  <script>
+    // 示例数据
+    const salesData = [
+      { rank: 1, province: "湖南", value: "5000 单" },
+      { rank: 2, province: "四川", value: "4500 单" },
+      { rank: 3, province: "山东", value: "4200 单" },
+      { rank: 4, province: "江苏", value: "4000 单" },
+    ];
+  
+    const amountData = [
+      { rank: 1, province: "湖南", value: "10 万元" },
+      { rank: 2, province: "四川", value: "9.5 万元" },
+      { rank: 3, province: "山东", value: "9 万元" },
+      { rank: 4, province: "江苏", value: "8.8 万元" },
+    ];
+  
+    let currentData = salesData;
+  
+    function renderRankingList(data) {
+      const rankingList = document.getElementById("rankingList");
+      rankingList.innerHTML = data
+        .map((item) => {
+          const medalClass =
+            item.rank === 1
+              ? "gold"
+              : item.rank === 2
+              ? "silver"
+              : item.rank === 3
+              ? "bronze"
+              : "";
+          const medal =
+            item.rank === 1
+              ? "🥇"
+              : item.rank === 2
+              ? "🥈"
+              : item.rank === 3
+              ? "🥉"
+              : `#${item.rank}`;
+  
+          return `
+            <div class="ranking-item">
+              <div class="ranking-rank ${medalClass}">${medal}</div>
+              <div class="ranking-province">${item.province}</div>
+              <div class="ranking-value">${item.value}</div>
+            </div>
+          `;
+        })
+        .join("");
+    }
+  
+    function switchRanking(type) {
+      currentData = type === "sales" ? salesData : amountData;
+      document.getElementById("salesBtn").classList.toggle("active", type === "sales");
+      document.getElementById("amountBtn").classList.toggle("active", type === "amount");
+      renderRankingList(currentData);
+    }
+  
+    // 初始化渲染
+    renderRankingList(currentData);
+  
+    function loadMore() {
+      if (currentData === salesData) {
+        salesData.push(
+          { rank: salesData.length + 1, province: "浙江", value: "3800 单" }
+        );
+      } else {
+        amountData.push(
+          { rank: amountData.length + 1, province: "浙江", value: "8.5 万元" }
+        );
+      }
+      renderRankingList(currentData);
+    }
+  </script>
+  
+</body>
+
+</html>

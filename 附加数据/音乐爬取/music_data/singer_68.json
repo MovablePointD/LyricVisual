@@ -1,0 +1,30 @@
+{
+    "id": 68,
+    "singer_name": "1117",
+    "category": "华语组合/乐队",
+    "singer_url": "https://music.163.com/artist?id=12481763",
+    "description": "··········",
+    "songs": [
+        {
+            "song_name": "小黄人版Happy Birthday To You（Cover ：Unknow）",
+            "song_url": "https://music.163.com/#//song?id=501077551",
+            "lyrics": "Happy Birthday To You\r\n   祝你生日快乐\r\n     ......\r",
+            "popularity": "552",
+            "time": "2017-08-24T01:37:07"
+        },
+        {
+            "song_name": "Freedom",
+            "song_url": "https://music.163.com/#//song?id=486902997",
+            "lyrics": "纯音乐，请欣赏",
+            "popularity": "0",
+            "time": "2017-06-26T21:49:55"
+        },
+        {
+            "song_name": "Tremor × Shooting Stars",
+            "song_url": "https://music.163.com/#//song?id=1295845352",
+            "lyrics": "",
+            "popularity": "16",
+            "time": "2018-07-23T08:00:00"
+        }
+    ]
+}

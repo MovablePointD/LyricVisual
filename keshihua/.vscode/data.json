@@ -1,0 +1,23 @@
+{
+    "2021": [
+      {"name": "Ajax", "value": 10},
+      {"name": "Hadoop", "value": 15},
+      {"name": "Git", "value": 20},
+      {"name": "搜索引擎", "value": 25},
+      {"name": "Redis", "value": 30}
+    ],
+    "2022": [
+      {"name": "Vue.js", "value": 40},
+      {"name": "Linux", "value": 35},
+      {"name": "CSS", "value": 30},
+      {"name": "JavaScript", "value": 50},
+      {"name": "React", "value": 45}
+    ],
+    "2023": [
+      {"name": "Node.js", "value": 60},
+      {"name": "Docker", "value": 55},
+      {"name": "Kubernetes", "value": 50},
+      {"name": "TypeScript", "value": 45},
+      {"name": "Svelte", "value": 40}
+    ]
+  }
